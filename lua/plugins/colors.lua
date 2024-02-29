@@ -1,5 +1,6 @@
 function ColorMyPencils(color)
-	color = color or "tokyonight"
+	color = color or "rose-pine"
+
 	vim.cmd.colorscheme(color)
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -29,8 +30,8 @@ return {
                     floats = "dark", -- style for floating windows
                 },
             })
-            vim.cmd.colorscheme "tokyonight"
-            ColorMyPencils()
+            -- vim.cmd.colorscheme "tokyonight"
+            -- ColorMyPencils()
         end
     },
     {
@@ -49,7 +50,7 @@ return {
                 disable_background = true,
             })
 
-            --vim.cmd("colorscheme rose-pine")
+            vim.cmd("colorscheme rose-pine")
 
             ColorMyPencils()
         end

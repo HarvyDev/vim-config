@@ -31,6 +31,7 @@ return {
                 "rust_analyzer",
                 "tsserver",
                 "clangd",
+                "kotlin_language_server",
             },
             handlers = {
                 function(server_name) -- default handler (optional)

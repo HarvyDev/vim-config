@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-	color = color or "rose-pine"
+	color = color or "kanagawa-paper"
 
 	vim.cmd.colorscheme(color)
 
@@ -30,17 +30,11 @@ return {
                     floats = "dark", -- style for floating windows
                 },
             })
-            -- vim.cmd.colorscheme "tokyonight"
-            -- ColorMyPencils()
         end
     },
     {
         "catppuccin/nvim",
         name = "catppuccin",
-        --priority = 1000,
-        config = function()
-            -- vim.cmd.colorscheme "catppuccin"
-        end
     },
     {
         "rose-pine/neovim",
@@ -49,11 +43,12 @@ return {
             require('rose-pine').setup({
                 disable_background = true,
             })
-
-            vim.cmd("colorscheme rose-pine")
-
             ColorMyPencils()
         end
     },
+    {
+        "sho-87/kanagawa-paper.nvim",
+        name = "kanagawa",
+    }
 }
 

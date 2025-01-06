@@ -2,11 +2,11 @@ return {
     "rose-pine/neovim",
     name = "rose-pine",
     config = function()
-        rosepine = require("rose-pine")
+        local rosepine = require("rose-pine")
 
         rosepine.setup({
             disable_background = true,
-            
+
             styles = {
                 bold = true,
                 italic = false,
